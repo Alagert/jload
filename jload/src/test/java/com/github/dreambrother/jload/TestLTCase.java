@@ -17,4 +17,9 @@ public class TestLTCase {
     public void loadTest2() throws InterruptedException {
         Thread.sleep(300L);
     }
+
+    @LoadTest(iterationCount = 100, threadCount = 5)
+    public void loadTest3() throws InterruptedException {
+        Thread.sleep(200L);
+    }
 }
